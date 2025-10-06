@@ -3,92 +3,260 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CreativaMente - Blog de Arte y Cultura</title>
+    <title>HeroVerse - Elite Collector's Hub</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Rajdhani:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Header -->
-    <header class="header">
-        <div class="container">
-            <h1 class="blog-title">🎨 CreativaMente</h1>
-            <p class="blog-subtitle">Explorando el arte, la música y el cine</p>
+    <!-- Fondo animado de murciélagos -->
+    <div class="bat-background" id="batBackground"></div>
+    
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-icon"></span>
+                <span class="logo-text">HEROVERSE</span>
+                <span class="logo-subtitle">ELITE COLLECTION</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#inicio" class="nav-glow">INICIO</a></li>
+                <li><a href="#coleccion" class="nav-glow">COLECCIÓN</a></li>
+                <li><a href="#resenas" class="nav-glow">RESEÑAS</a></li>
+                <li><a href="#autor" class="nav-glow">SOBRE MÍ</a></li>
+            </ul>
         </div>
-    </header>
+    </nav>
 
-    <!-- Artículos Recientes -->
-    <main class="main-content">
-        <div class="container">
-            <section class="posts-section">
-                <h2>Artículos Recientes</h2>
-                <div class="posts-grid" id="postsGrid">
-                    <!-- Los artículos se cargarán con JavaScript -->
-                </div>
-            </section>
-
-            <!-- Sobre el Autor -->
-            <section class="about-section">
-                <h2>Sobre el Autor</h2>
-                <div class="author-card">
-                    <div class="author-image">
-                        <div class="avatar">CM</div>
+    <!-- Hero Section -->
+    <header class="hero" id="inicio">
+        <div class="hero-grid">
+            <div class="hero-content">
+                <div class="hero-badge">COLECCIÓN PREMIUM</div>
+                <h1 class="hero-title">
+                    <span class="title-line">HERO</span>
+                    <span class="title-line accent">VERSE</span>
+                </h1>
+                <p class="hero-subtitle">Donde los mitos se convierten en reliquias</p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <div class="stat-number">247</div>
+                        <div class="stat-label">ARTEFACTOS ÚNICOS</div>
                     </div>
-                    <div class="author-info">
-                        <h3>Camilo Lemus</h3>
-                        <p class="author-bio">
-                            Apasionado por las artes visuales, la música independiente y el cine de autor. 
-                            Comparto mis descubrimientos y reflexiones sobre la creatividad en la era digital.
-                        </p>
-                        <div class="author-stats">
-                            <span class="stat">📝 45 Artículos</span>
-                            <span class="stat">🎯 3 Años escribiendo</span>
-                            <span class="stat">🌟 Especialista en cine</span>
+                    <div class="stat">
+                        <div class="stat-number">89</div>
+                        <div class="stat-label">EDICIONES RARAS</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">15M</div>
+                        <div class="stat-label">EN VALORACIÓN</div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="floating-card">
+                    <div class="card-glow"></div>
+                    <div class="comic-cover" style="background-image: url('https://tse3.mm.bing.net/th/id/OIP.Am3malEpowlcrhBSjix24gHaLa?rs=1&pid=ImgDetMain&o=7&rm=3')">
+                        <div class="cover-overlay">
+                            <div class="cover-title">BATMAN<br>YEAR ONE</div>
+                            <div class="cover-price">$12,450</div>
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
         </div>
+    </header>
+
+    <!-- Artículos de Colección -->
+    <main class="main-content">
+        <section class="collection-section" id="coleccion">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">ARTEFACTOS LEGENDARIOS</h2>
+                    <p class="section-subtitle">Piezas de colección que definen eras</p>
+                </div>
+                
+                <div class="collection-grid" id="collectionGrid">
+                    <!-- Artículos cargados por JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Reseñas de Películas -->
+        <section class="reviews-section" id="resenas">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">ANÁLISIS CINEMATOGRÁFICO</h2>
+                    <p class="section-subtitle">Críticas profundas del universo cinematográfico</p>
+                </div>
+                
+                <div class="reviews-grid" id="reviewsGrid">
+                    <!-- Reseñas cargadas por JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Sobre el Autor -->
+        <section class="author-section" id="autor">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">SOBRE EL AUTOR</h2>
+                    <p class="section-subtitle">La mente detrás de esta colección</p>
+                </div>
+                
+                <div class="author-content">
+                    <div class="author-profile">
+                        <div class="author-avatar">
+                            <div class="avatar-circle">CL</div>
+                        </div>
+                        <div class="author-info">
+                            <h3 class="author-name">Camilo Lemus</h3>
+                            <div class="author-age">21 años · Apasionado del Universo Geek</div>
+                            <div class="author-bio">
+                                <p>Desde que tengo memoria, los cómics han sido mi ventana a mundos infinitos. Actualmente estudio <strong>Ingeniería Multimedia</strong>, combinando mi pasión por la tecnología con el arte del storytelling visual.</p>
+                                <p>Mi misión es preservar y celebrar la rica mitología de los superhéroes, desde los clásicos atemporales hasta las joyas modernas que redefinen el género.</p>
+                            </div>
+                            <div class="author-stats">
+                                <div class="author-stat">
+                                    <div class="stat-number">50+</div>
+                                    <div class="stat-label">CÓMICS EN COLECCIÓN</div>
+                                </div>
+                                <div class="author-stat">
+                                    <div class="stat-number">2</div>
+                                    <div class="stat-label">AÑOS COLECCIONANDO</div>
+                                </div>
+                                <div class="author-stat">
+                                    <div class="stat-number">∞</div>
+                                    <div class="stat-label">PASIÓN POR EL ARTE</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reseña Especial: All Star Superman -->
+        <section class="featured-review-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">OBRA MAESTRA DEL SIGLO</h2>
+                    <p class="section-subtitle">All Star Superman - La Definitiva Odisea del Hombre de Acero</p>
+                </div>
+                
+                <div class="featured-review">
+                    <div class="review-comic-cover" style="background-image: url('https://media.senscritique.com/media/000008374930/source_big/All_Star_Superman.jpg')">
+                        <div class="cover-badge">CLÁSICO ABSOLUTO</div>
+                    </div>
+                    <div class="review-content">
+                        <div class="review-header">
+                            <h3 class="review-title">All Star Superman</h3>
+                            <div class="review-rating">100%</div>
+                        </div>
+                        <div class="review-meta">
+                            <span>Grant Morrison · Frank Quitely</span>
+                            <span>2005-2008</span>
+                            <span>12 Números</span>
+                        </div>
+                        <div class="review-text">
+                            <p><strong>All Star Superman no es solo un cómic; es una experiencia trascendental.</strong> Grant Morrison y Frank Quitely lograron capturar la esencia pura del Hombre de Acero en lo que posiblemente sea la obra definitiva sobre el personaje.</p>
+                            
+                            <p>La premisa es simple pero profunda: Superman está muriendo, envenenado por el sol, y debe completar sus 12 labores finales. Pero lo que hace esta obra tan increíble es cómo cada página, cada viñeta, celebra todo lo que hace grande a Superman.</p>
+                            
+                            <div class="highlight-points">
+                                <div class="highlight">
+                                    <span class="highlight-icon"></span>
+                                    <span>La escena de Superman salvando a una adolescente suicida es de lo más conmovedor jamás escrito en cómics</span>
+                                </div>
+                                <div class="highlight">
+                                    <span class="highlight-icon"></span>
+                                    <span>El arte de Frank Quitely redefine lo que es posible en el medio secuencial</span>
+                                </div>
+                                <div class="highlight">
+                                    <span class="highlight-icon"></span>
+                                    <span>Cada número es una lección magistral de narrativa y desarrollo de personajes</span>
+                                </div>
+                            </div>
+                            
+                            <p>Lo que hace a All Star Superman tan especial es que <strong>entiende que el verdadero poder de Superman no son sus habilidades, sino su humanidad.</strong> Su compasión, su esperanza, su creencia inquebrantable en lo mejor de la humanidad.</p>
+                            
+                            <p class="review-verdict">
+                                <strong>Veredicto:</strong> Una obra esencial no solo para fans de Superman, sino para cualquier amante del cómic como arte. Grant Morrison demuestra por qué es uno de los mejores escritores del medio, y Frank Quitely entrega el trabajo de su vida.
+                            </p>
+                        </div>
+                        <div class="review-score">
+                            <div class="score-card">
+                                <div class="score-title">PUNTUACIÓN FINAL</div>
+                                <div class="score-value">10/10</div>
+                                <div class="score-label">OBRA MAESTRA ABSOLUTA</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-section">
-                    <h4>Explorar</h4>
-                    <ul class="footer-links">
-                        <li><a href="#">Arte Visual</a></li>
-                        <li><a href="#">Música</a></li>
-                        <li><a href="#">Cine</a></li>
-                        <li><a href="#">Fotografía</a></li>
-                    </ul>
+                <div class="footer-main">
+                    <div class="footer-brand">
+                        <div class="footer-logo">HEROVERSE</div>
+                        <p class="footer-tagline">Preservando la mitología moderna</p>
+                        <div class="crypto-value">
+                            <span class="crypto-label">VALOR COLECCIÓN:</span>
+                            <span class="crypto-amount">₿ 2.45</span>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-links-grid">
+                        <div class="link-group">
+                            <h4>COLECCIONES</h4>
+                            <ul>
+                                <li><a href="https://www.marvel.com/movies">Marvel Cinematic</a></li>
+                                <li><a href="https://www.dc.com/comics">DC Extended</a></li>
+                                <li><a href="https://www.hobbiesandcollectibles.co/">Figuras Hot Toys</a></li>
+                                <li><a href="https://dadscomicvault.com/es">Cómics Graded</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="link-group">
+                            <h4>INVERSIÓN</h4>
+                            <ul>
+                                <li><a href="#subastas">Subastas Elite</a></li>
+                                <li><a href="#valoracion">Valoración</a></li>
+                                <li><a href="#tendencias">Tendencias</a></li>
+                                <li><a href="#raridades">Índice de Rareza</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="link-group">
+                            <h4>COMUNIDAD</h4>
+                            <ul>
+                                <li><a href="#verificacion">Verificación</a></li>
+                                <li><a href="#foro">Foro Elite</a></li>
+                                <li><a href="#eventos">Eventos Exclusive</a></li>
+                                <li><a href="#contacto">Certificación</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
                 
-                <div class="footer-section">
-                    <h4>Conectar</h4>
-                    <ul class="footer-links">
-                        <li><a href="#">Instagram</a></li>
-                        <li><a href="#">Twitter</a></li>
-                        <li><a href="#">YouTube</a></li>
-                        <li><a href="#">Newsletter</a></li>
-                    </ul>
+                <div class="footer-bottom">
+                    <div class="security-badge">
+                        <span class="secure-icon">🛡️</span>
+                        <span>COLECCIÓN VERIFICADA · TRANSACCIONES SEGURAS</span>
+                    </div>
+                    <div class="footer-copyright">
+                        <p>&copy; 2024 HEROVERSE ELITE COLLECTION · CREADO POR CAMILO LEMUS</p>
+                    </div>
                 </div>
-                
-                <div class="footer-section">
-                    <h4>Legal</h4>
-                    <ul class="footer-links">
-                        <li><a href="#">Privacidad</a></li>
-                        <li><a href="#">Términos</a></li>
-                        <li><a href="#">Cookies</a></li>
-                    </ul>
-                </div>
-            </div>
-            
-            <div class="footer-bottom">
-                <p>&copy; 2024 CreativaMente - Blog personal de Camilo Lemus. Todos los derechos reservados.</p>
             </div>
         </div>
     </footer>
 
-    <script src="js/blog.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
