@@ -33,5 +33,6 @@ app.get('/api/datos', (req, res) => {
 
 // Iniciar servidor
 app.listen(PORT, () => {
+    console.log(`Server running on http://localhost:${PORT}`);
 
 });
